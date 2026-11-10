@@ -14,37 +14,37 @@
     <div class="row justify-content-center g-4 mb-5">
 
         <div class="col-6 col-md-2">
-            <div class="card text-center border rounded-4 py-4 shadow-sm">
-                <div class="card-body">
-                    <h3 class="fw-bold">150</h3>
+            <div class="card text-center border rounded-4 py-4 shadow-sm" style="height: 150px;">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="fw-bold">{{ config('perpustakaan.statistik.total_buku')}}</h3>
                     <p class="text-muted mb-0">buku</p>
                 </div>
             </div>
         </div>
 
         <div class="col-6 col-md-2">
-            <div class="card text-center border rounded-4 py-4 shadow-sm">
-                <div class="card-body">
-                    <h3 class="fw-bold">45</h3>
+            <div class="card text-center border rounded-4 py-4 shadow-sm" style="height: 150px;">
+                <div class="card-body  d-flex flex-column justify-content-center">
+                    <h3 class="fw-bold">{{ config('perpustakaan.statistik.total_anggota')}}</h3>
                     <p class="text-muted mb-0">anggota</p>
                 </div>
             </div>
         </div>
 
          <div class="col-6 col-md-2">
-            <div class="card text-center border rounded-4 py-4 shadow-sm">
-                <div class="card-body">
-                    <h3 class="fw-bold">12</h3>
-                    <p class="text-muted mb-0">buku<br>dipinjam</p>
+            <div class="card text-center border rounded-4 py-4 shadow-sm" style="height: 150px;">
+                <div class="card-body  d-flex flex-column justify-content-center">
+                    <h3 class="fw-bold">{{ config('perpustakaan.statistik.dipinjam')}}</h3>
+                    <p class="text-muted mb-0">buku dipinjam</p>
                 </div>
             </div>
         </div>
 
         <div class="col-6 col-md-2">
-            <div class="card text-center border rounded-4 py-4 shadow-sm">
-                <div class="card-body">
-                    <h3 class="fw-bold">8</h3>
-                    <p class="text-muted mb-0">kategori</p>
+            <div class="card text-center border rounded-4 py-4 shadow-sm" style="height: 150px;">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="fw-bold">{{ config('perpustakaan.statistik.tersedia')}}</h3>
+                    <p class="text-muted mb-0">buku tersedia</p>
                 </div>
             </div>
         </div>

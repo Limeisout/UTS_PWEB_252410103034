@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PerpustakaanController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/login', [PerpustakaanController::class, 'loginform'])->name('loginform');
 
-Route::post('/login', [PerpustakaanController::class, 'login'])->name('login');
+Route::post('/login', [PerpustakaanController::class, 'loginProcess'])->name('login');
 
 Route::get('/dashboard', function () {
     return view('main.dashboard');
@@ -20,8 +20,6 @@ Route::get('/pengelolaan', [PerpustakaanController::class, 'pengelolaan'])->name
 Route::get('/profile', function () {
     return view('main.profile');
 })->name('profile');
-
-
 
 Route::get('/logout', function () {
     return redirect('/login');

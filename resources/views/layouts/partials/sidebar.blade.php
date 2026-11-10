@@ -1,18 +1,33 @@
-<aside class="w-64 bg-gray-800 text-white flex flex-col">
+<aside class="text-dark d-flex flex-column" style="width: 250px; min-height: 100vh;">
 
 
 
-    <nav class="flex-1 px-4 py-4 space-y-2">
-        <a href="{{ route('dashboard') }}" class="block px-4 py-2 rounded hover:bg-gray-700 {{ request()->routeIs('dashboard') ? 'bg-gray-700' : '' }}">
-            Dashboard
-        </a>
+    <nav class="flex-grow-1 px-3 py-4">
+        <div class="mb-0">
+            <a href="{{ route('dashboard') }}" class="d-block text-decoration-none text-dark px-4 py-2 rounded {{ request()->routeIs('dashboard') ? 'bg-primary text-white' : 'text-dark' }}" 
+            style="transition: background-color 0.2s;"
+            onmouseover="if(!this.classList.contains('bg-primary')) this.classList.add('bg-secondary', 'text-white');"
+            onmouseout="if(!this.classList.contains('bg-primary')) this.classList.remove('bg-secondary', 'text-white');"> 
+                Dashboard
+            </a>
+        </div>
         <br>
-        <a href="{{ route('profile') }}" class="block px-4 py-2 rounded hover:bg-gray-700 {{ request()->routeIs('profile') ? 'bg-gray-700' : '' }}">
-            Profile
-        </a>
+        <div class="mb-0">
+            <a href="{{ route('profile') }}" class="d-block text-decoration-none text-dark px-4 py-2 rounded {{ request()->routeIs('profile') ? 'bg-primary text-white' : 'text-dark' }}" 
+            style="transition: background-color 0.2s;"
+            onmouseover="if(!this.classList.contains('bg-primary')) this.classList.add('bg-secondary', 'text-white');"
+            onmouseout="if(!this.classList.contains('bg-primary')) this.classList.remove('bg-secondary', 'text-white');"> 
+                Profile
+            </a>
+        </div>
         <br>
-        <a href="{{ route('pengelolaan') }}" class="block px-4 py-2 rounded hover:bg-gray-700 {{ request()->routeIs('pengelolaan') ? 'bg-gray-700' : '' }}">
-            Pengelolaan
-        </a>
+        <div class="mb-0">
+            <a href="{{ route('pengelolaan') }}" class="d-block text-decoration-none text-dark px-4 py-2 rounded {{ request()->routeIs('pengelolaan') ? 'bg-primary text-white' : 'text-dark' }}" 
+            style="transition: background-color 0.2s;"
+            onmouseover="if(!this.classList.contains('bg-primary')) this.classList.add('bg-secondary', 'text-white');"
+            onmouseout="if(!this.classList.contains('bg-primary')) this.classList.remove('bg-secondary', 'text-white');"> 
+                pengelolaan
+            </a>
+        </div>
     </nav>
 </aside>

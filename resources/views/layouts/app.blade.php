@@ -11,14 +11,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         @include('layouts.partials.navbar')
     </nav>
-
-    <div class="container-fluid" style="padding-top: 80px;">
+    <div class="container-fluid" style="padding-top: 60px;">
         <div class="row">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="min-height: 100vh;">
                 @include('layouts.partials.sidebar')
             </nav>
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" style="padding-top: 80px;">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" style="padding-top: 60px;">
                 @yield('content')
             </main>
         </div>

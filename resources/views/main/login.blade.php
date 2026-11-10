@@ -30,7 +30,7 @@
                             <input for="email" name="email" class="form-control form-control-lg bg-light" placeholder="Email" required>
                         </div>
                         <div class="mb-3">
-                            <input for="password" name="password" class="form-control form-control-lg bg-light" placeholder="Password" required>
+                            <input for="password" name="password" type="password" class="form-control form-control-lg bg-light" placeholder="Password" required>
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Masuk</button>
