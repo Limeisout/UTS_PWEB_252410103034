@@ -1,0 +1,1 @@
+website ini merupakan sistem pengelola buku perpustakaan berbasis laravel yang dirancang untuk menampilkan antarmuka data secara modern dan interaktif. website ini dibuat agar pengelolaan buku menjadi praktis
